@@ -1,0 +1,31 @@
+<form [formGroup]="registerForm">
+  
+    <label>
+      UserName:
+      <input type="text" formControlName="UserName">
+    </label> <br>
+  
+    <label>
+      Password:
+      <input type="text" formControlName="Password">
+    </label><br>
+    <label>
+        Email:
+        <input type="text" formControlName="Email">
+      </label><br>
+      <label>
+       FirstName:
+        <input type="text" formControlName="FirstName">
+      </label><br>
+      <label>
+       LastName:
+        <input type="text" formControlName="LastName">
+      </label><br>
+
+  </form>
+  <button type="submit" (click)="onSubmit()" [disabled]="!registerForm.valid">Submit</button>
+
+<div>
+    <Button (click) = "goTo_login()"> login </Button>
+
+</div>

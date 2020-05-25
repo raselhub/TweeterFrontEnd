@@ -1,0 +1,20 @@
+
+
+<form [formGroup]="logInForm">
+  
+    <label>
+      UserName:
+      <input type="text" formControlName="UserName">
+    </label> <br>
+  
+    <label>
+      Password:
+      <input type="text" formControlName="Password">
+    </label>
+  
+  </form>
+  <button type="submit" (click)="onSubmit()" [disabled]="!logInForm.valid">login</button>
+
+<div>
+    <button (click)="gotoRegister()"> register </button>
+</div>
