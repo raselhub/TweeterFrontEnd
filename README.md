@@ -1,27 +1,32 @@
-# TweetFront
+# git commands:
+- create you own branch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+- git checkout -b tusharBranch
+# switch to your branch from master to tusharBranch
 
-## Development server
+- git checkout tusharBranch
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# or: use force to checkout 
+- git checkout -f tusharBranch
 
-## Code scaffolding
+# git pull , eg: if you are behind
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- git pull
+# If you want to pull a branch and you edited your branch
 
-## Build
+stash the your branch
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- git stash
+# then pull
 
-## Running unit tests
+- pull master
+- if you want to rebase your branch with master
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- git rebase master
+# do not merge with master without conversation
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# eg: if you want to merge your local branch with - - - - - tusharBranch
+# git merge tusharBranch
+# Stop giving username and password for every commit:
+# git config --global user.name "example@gmail.com"
+# git config --global user.password "password"
