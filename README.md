@@ -14,7 +14,7 @@
 - git pull
 # If you want to pull a branch and you edited your branch
 
-stash the your branch
+stash the your branch.
 
 - git stash
 # then pull
